@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ResolutionGroupName("Effects")]
-[assembly: ExportEffect(typeof(ShowHidePasswordEntryXF.Droid.ClearEntryEffect), "ClearEntryEffect")]
+[assembly: ExportEffect(typeof(ShowHidePasswordEntryXF.Droid.ClearEntryEffect), "ShowHiddenEntryEffect")]
 namespace ShowHidePasswordEntryXF.Droid
 {
 	public class ClearEntryEffect : PlatformEffect
