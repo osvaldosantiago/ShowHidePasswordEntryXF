@@ -18,17 +18,17 @@ namespace ShowHidePasswordEntryXF.iOS
 			{
 				var formsEntry = (ShowHidePasswordEntry)e.NewElement;
 				var buttonRect = UIButton.FromType(UIButtonType.Custom);
-				buttonRect.SetImage(new UIImage("ic_show_password"), UIControlState.Normal);
+				buttonRect.SetImage(new UIImage("show_pass"), UIControlState.Normal);
 				buttonRect.TouchUpInside += (object sender, EventArgs e1) =>
 				{
 					if (Control.SecureTextEntry)
 					{
 						Control.SecureTextEntry = false;
-						buttonRect.SetImage(new UIImage("ic_hide_password"), UIControlState.Normal);
+						buttonRect.SetImage(new UIImage("hide_pass"), UIControlState.Normal);
 					}
 					else {
 						Control.SecureTextEntry = true;
-						buttonRect.SetImage(new UIImage("ic_show_password"), UIControlState.Normal);
+						buttonRect.SetImage(new UIImage("show_pass"), UIControlState.Normal);
 					}
 				};
 
@@ -57,7 +57,6 @@ namespace ShowHidePasswordEntryXF.iOS
 				Control.Layer.BorderColor = new CoreGraphics.CGColor(255, 255, 255);
 				Control.Layer.MasksToBounds = true;
 				Control.TextAlignment = UITextAlignment.Left;
-
 			}
 		}
 	}
