@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace ShowHidePasswordEntryXF
 {
-	public class ClearEntryEffect : RoutingEffect
+	public class ShowHiddenEntryEffect : RoutingEffect
 	{
-		public ClearEntryEffect() : base("Effects.ClearEntryEffect")
+		public ShowHiddenEntryEffect() : base("Effects.ShowHiddenEntryEffect")
 		{
 		}
 	}
